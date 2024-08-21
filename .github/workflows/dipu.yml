@@ -8,7 +8,6 @@ concurrency:
 jobs:
   checkout_code:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4.1.0
